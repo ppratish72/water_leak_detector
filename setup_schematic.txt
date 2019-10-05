@@ -1,0 +1,18 @@
+PART I
+esp8266 ---> if 
+  |             moisture detected, publish value 1 to topic "leak_basement"
+  |          else   
+  |             publish value 0 to topic "leak_basement"
+  V
+Moisture detector.
+
+PART II
+
+Publish broker msgs happen on Raspberry Pii at 192.168.0.101 where
+mosquito Broker server is running.
+
+PART III
+Use script in this project to check ( subscribe to topic "leak_basement" ) if we find value=1. 
+
+if value=1, then as per Part I, there is leak. So script will notifly iftt and/or shutoff main valve...etc
+
