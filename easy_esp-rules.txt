@@ -1,0 +1,56 @@
+
+-----------------------
+Devices looks like
+-----------------------
+
+<>	Task	Device	        Name	    Port	IDX/Variable	GPIO	        Values
+Edit	1						
+Edit	2	Analog input	ainput-ld		2	        ADC (TOUT)	Analog:974.0
+Edit	3	Dummy_Device	dstat		        7		                dstatval:2.00
+                                                                                        :0.00
+                                                                                        :0.00
+                                                                                        :0.00
+
+-----------------------
+Rules are setup as
+-----------------------
+
+on ainput-ld#Analog do
+  if [ainput-ld#Analog]<750
+     Publish /%sysname%/leakdetect,1
+     Publish /wemo01/swcmd/cmd,gpio,16,1
+     TaskValueSet 3,1,1
+  else
+     Publish /%sysname%/leakdetect,0
+     TaskValueSet 3,1,2
+  endif
+endon
+
+---------------------
+Hardware is as
+---------------------
+Hardware Settings	
+Wifi Status Led:     <blank>	
+SDA:                 GPIO-4 	
+SCL:	             GPIO-5
+
+--------------------
+config Tab has this info 
+--------------------
+Main Settings	
+Name:	basementleak1
+Admin Password:	<set your own>
+SSID:	        <your Wifi SSID>
+WPA Key:	<your wifi Key>
+WPA AP Mode Key:	configesp
+Unit nr:	0
+Protocol:	OpenHAB MQTT
+Locate Controller:	Use IP Address
+Controller IP:	        192.168.1.101
+Controller Port:	1883
+Controller User:	<set your own> if you have setup in your broker-server
+Controller Password:	<set your own>
+Sensor Delay:	        5
+Sleep Mode:	
+
+
