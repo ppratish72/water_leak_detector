@@ -1,0 +1,114 @@
+git push --set-upstream origin ver2
+-------------------------------------
+git https://github.com/Pylons/pyramid.git
+git co https://github.com/Pylons/pyramid.git
+git clone https://github.com/Pylons/pyramid.git
+git clone https://github.com/ppratish72/HelloWorld.git
+git status
+git branch v1
+git status
+git co v1
+git checkout v1
+git status
+git status
+git add leakdetect2ifttt.sh
+git status
+git commit leakdetect2ifttt.sh
+git config --global user.email "ppratish72@gmail.com"
+git config --global user.name "Pratish Patel"
+git commit leakdetect2ifttt.sh
+git add cronjob-leakdetect2ifttt.sh
+git status
+git commit cronjob-leakdetect2ifttt.sh
+git
+git rebase
+git rebase master
+git show
+git stage
+git status
+git log
+git help
+git rebase
+git rebase v1
+git rebase master
+git branch master
+git co master
+git master
+git checkout master
+git pull
+git rebase
+git checkout v1
+git rebase
+git rebase master
+git log
+git stage
+git help
+git merge
+git help
+git commit
+git rebase v1
+git push
+git rebase -i
+git status
+git rebase -i v1
+git rebase -i master
+git log
+git rebase -i master
+git push
+git push --set-upstream origin v1
+history|grep git
+git init
+git status
+git add README.md
+git add cronjob-leakdetect2ifttt.sh
+git add leakdetect2ifttt.sh
+git add setup_schematic.txt
+git commit -m "Initial commit"
+git remote add origin https://github.com/ppratish72/water_leak_detector.git
+git status
+git push -u origin master
+git status
+git branch ver2
+git status
+git checkout ver2
+git status
+git status
+git add easy_esp-rules.txt
+git commit
+git push
+git push --set-upstream origin ver2
+git log
+git status
+git status
+git co master
+git checkout master
+git pull
+git checkout ver2
+git status
+git log
+git log
+git status
+git co master
+git maste
+git master
+git --help
+git branch
+git checkout master
+git checkout ver2
+git checkout master
+git pull
+git checkout ver2
+git rebase -i master
+git push ver2
+git status
+git push origin/ver2
+git push origin\ver2
+git --help
+history|grep git
+
+
+
+git push origin --delete ver2
+git branch --unset-upstream   # just a fixup, as we dele origin/ver2 and our local is still referenceing origin...
+git rebase -i master
+git push --set-upstream origin ver2
