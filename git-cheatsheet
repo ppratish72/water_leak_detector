@@ -1,5 +1,13 @@
 git push --set-upstream origin ver2
+<<<<<<< HEAD
 -------------------------------------
+=======
+
+
+
+
+
+>>>>>>> 6e05c8edb5c5957ed55c79eb8fe7e8abd3158d61
 git https://github.com/Pylons/pyramid.git
 git co https://github.com/Pylons/pyramid.git
 git clone https://github.com/Pylons/pyramid.git
