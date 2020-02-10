@@ -1,3 +1,4 @@
+Note: below info only applies if you have flash your esp8266 with easy_esp f/w
 
 -----------------------
 Devices looks like
@@ -53,4 +54,4 @@ Controller Password:	<set your own>
 Sensor Delay:	        5
 Sleep Mode:	
 
-
+End
